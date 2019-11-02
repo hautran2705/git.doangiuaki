@@ -1,0 +1,402 @@
+extends adlayout
+
+block content
+ .main-content
+  .section__content.section__content--p30
+    .container-fluid
+      .row
+        .col-lg-12
+          h2.title-1.m-b-25 Top bán ra
+          .table-responsive.table--no-card.m-b-40
+            table.table.table-borderless.table-striped.table-earning
+              thead
+                tr
+                  th Ngày
+                  th Mã sản phẩm
+                  th Tên
+                  th.text-right Giá (nghìn đồng)
+                  th.text-right Số lượng
+                  th.text-right Tổng (nghìn đồng)
+              tbody
+                tr
+                  td.text-right 29/10/2019 05:57
+                  td 100398
+                  td Giường cao cấp QI
+                  td.text-right 1,541
+                  td.text-right 1000
+                  td.text-right 1,054,100
+                tr
+                  td.text-right 28/10/2019 01:22
+                  td 100397
+                  td Ghế hoàng gia
+                  td.text-right 2,900
+                  td.text-right 300
+                  td.text-right 870,000
+                tr
+                  td.text-right 31/10/2019 02:12
+                  td 100396
+                  td Bàn vàng rồng nguyên chất
+                  td.text-right 200,000
+                  td.text-right 100
+                  td.text-right 20,000,000
+                tr
+                  td.text-right 1/11/2019 23:06
+                  td 100395
+                  td Đèn chùm pha lê
+                  td.text-right 10,000
+                  td.text-right 90
+                  td.text-right 900,000
+                tr
+                  td.text-right 3/11/2019 19:03
+                  td 100393
+                  td Tủ quần áo CQ
+                  td.text-right 1,000
+                  td.text-right 88
+                  td.text-right 88,000
+                tr
+                  td.text-right 3/11/2019 05:57
+                  td 100392
+                  td Tủ chén Mỹ Âu
+                  td.text-right 2,000
+                  td.text-right 87
+                  td.text-right 174,000
+                tr
+                  td 1/11/2019 19:20
+                  td 100391
+                  td Bộ ghế sopha CC
+                  td.text-right 3,100
+                  td.text-right 80
+                  td.text-right 248,000
+                tr
+                  td.text-right 28/10/2019 00:43
+                  td 100393
+                  td Ghế dựa mủ
+                  td.text-right 100
+                  td.text-right 75
+                  td.text-right 7,500
+                tr
+                  td.text-right 29/10/2019 9:23
+                  td 101211
+                  td Giường cho trẻ
+                  td.text-right 2,000
+                  td.text-right 50
+                  td.text-right 100,000
+                tr
+                  td.text-right 28/10/2019 00:43
+                  td 120393
+                  td Combo nội thất cao cấp
+                  td.text-right 500,000
+                  td.text-right 30
+                  td.text-right 15,000,000
+      .row
+        .col-lg-12
+          // USER DATA
+          .user-data.m-b-30
+            h3.title-3.m-b-30
+              i.zmdi.zmdi-account-calendar
+              | Quản lý tài khoản
+            .filters.m-b-45
+              .rs-select2--dark.rs-select2--md.m-r-10.rs-select2--border
+                select.js-select2(name='property')
+                  option(selected='selected') Tất cả
+                  option(value='') Quản trị viên
+                  option(value='') Khách hàng
+                .dropDownSelect2
+              .rs-select2--dark.rs-select2--sm.rs-select2--border
+                select.js-select2.au-select-dark(name='time')
+                  option(selected='selected') Mọi lúc
+                  option(value='') Ngày
+                  option(value='') Tháng
+                  option(value='') Năm
+                .dropDownSelect2
+            .table-responsive.table-data
+              table.table
+                thead
+                  tr
+                    td
+                      label.au-checkbox
+                        input(type='checkbox')
+                        span.au-checkmark
+                    td Tên tài khoản
+                    td Chức vụ
+                    td Quyền
+                    td
+                tbody
+                  tr
+                    td
+                      label.au-checkbox
+                        input(type='checkbox')
+                        span.au-checkmark
+                    td
+                      .table-data__info
+                        h6 lori lsda
+                        span
+                          a(href='#') johnde@gmail.com
+                    td
+                      span.role.admin Quản trị viên
+                    td
+                      .rs-select2--trans.rs-select2--sm
+                        select.js-select2(name='property')
+                          option(selected='selected') Mọi quyền
+                        .dropDownSelect2
+                    td
+                      span.more
+                        i.zmdi.zmdi-more
+                  tr
+                    td
+                      label.au-checkbox
+                        input(type='checkbox' checked='checked')
+                        span.au-checkmark
+                    td
+                      .table-data__info
+                        h6 loeas lynch
+                        span
+                          a(href='#') jodoe@gmail.com
+                    td
+                      span.role.user Khách hàng
+                    td
+                      .rs-select2--trans.rs-select2--sm
+                        select.js-select2(name='property')
+                          option(value='' selected='selected') Mua hàng
+                          option(value='') Cấm giao dịch
+                        .dropDownSelect2
+                    td
+                      span.more
+                        i.zmdi.zmdi-more
+                  tr
+                    td
+                      label.au-checkbox
+                        input(type='checkbox')
+                        span.au-checkmark
+                    td
+                      .table-data__info
+                        h6 laori lysnch
+                        span
+                          a(href='#') johndode@gmail.com
+                    td
+                      span.role.user Khách hàng
+                    td
+                      .rs-select2--trans.rs-select2--sm
+                        select.js-select2(name='property')
+                          option(value='' selected='selected') Mua hàng
+                          option(value='') Cấm giao dịch
+                        .dropDownSelect2
+                    td
+                      span.more
+                        i.zmdi.zmdi-more
+                  tr
+                    td
+                      label.au-checkbox
+                        input(type='checkbox')
+                        span.au-checkmark
+                    td
+                      .table-data__info
+                        h6 loari lynch
+                        span
+                          a(href='#') johnddoe@gmail.com
+                    td
+                      span.role.member Giao hàng
+                    td
+                      .rs-select2--trans.rs-select2--sm
+                        select.js-select2(name='property')
+                          option(selected='selected') Giao hàng
+                          option(value='') Tạm dừng
+                        .dropDownSelect2
+                    td
+                      span.more
+                        i.zmdi.zmdi-more
+            .user-data__footer
+              button.au-btn.au-btn-load Xem thêm
+          // END USER DATA
+      .row
+        .col-md-12
+          // DATA TABLE
+          h3.title-5.m-b-35 Danh sách sản phẩm
+          .table-data__tool
+            .table-data__tool-left
+              .rs-select2--light.rs-select2--md
+                select.js-select2(name='property')
+                  option(selected='selected') Tất cả
+                  option(value='') Tên
+                  option(value='') Loại
+                  option(value='') Nhà cung cấp
+                  option(value='') Giá
+                .dropDownSelect2
+              .rs-select2--light.rs-select2--sm
+                select.js-select2(name='time')
+                  option(selected='selected') Hôm nay
+                  option(value='') Tuần qua
+                  option(value='') Tháng qua
+                  option(value='') Năm qua
+                .dropDownSelect2
+              button.au-btn-filter
+                i.zmdi.zmdi-filter-list
+                | Sắp xếp
+            .table-data__tool-right
+              button.au-btn.au-btn-icon.au-btn--green.au-btn--small
+                i.zmdi.zmdi-plus
+                | Thêm sản phẩm
+          .table-responsive.table-responsive-data2
+            table.table.table-data2
+              thead
+                tr
+                  th
+                    label.au-checkbox
+                      input(type='checkbox')
+                      span.au-checkmark
+                  th Mã số
+                  th Tên
+                  th Nhà cung cấp
+                  th Ngày
+                  th Trạng thái
+                  th Giá
+                  th
+              tbody
+                tr.tr-shadow
+                  td
+                    label.au-checkbox
+                      input(type='checkbox')
+                      span.au-checkmark
+                  td 100398
+                  td Giường cao cấp QI
+                  td.desc QI
+                  td 2018-09-27 02:12
+                  td 21/9/2019
+                    span.status--process Còn
+                  td 1,541
+                  td
+                    .table-data-feature
+                      button.item(data-toggle='tooltip' data-placement='top' title='Chỉnh sửa')
+                        i.zmdi.zmdi-edit
+                      button.item(data-toggle='tooltip' data-placement='top' title='Xóa')
+                        i.zmdi.zmdi-delete
+                      button.item(data-toggle='tooltip' data-placement='top' title='Khác')
+                        i.zmdi.zmdi-more
+                tr.spacer
+                tr.tr-shadow
+                  td
+                    label.au-checkbox
+                      input(type='checkbox')
+                      span.au-checkmark
+                  td 100397
+                  td Ghế hoàng gia
+                  td.desc Hoàng Gia
+                  td 11/9/2019 05:57
+                  td
+                    span.status--process Còn
+                  td 2,900
+                  td
+                    .table-data-feature
+                      button.item(data-toggle='tooltip' data-placement='top' title='Chỉnh sửa')
+                        i.zmdi.zmdi-edit
+                      button.item(data-toggle='tooltip' data-placement='top' title='Xóa')
+                        i.zmdi.zmdi-delete
+                      button.item(data-toggle='tooltip' data-placement='top' title='Khác')
+                        i.zmdi.zmdi-more
+                tr.spacer
+                tr.tr-shadow
+                  td
+                    label.au-checkbox
+                      input(type='checkbox')
+                      span.au-checkmark
+                  td 100395
+                  td Đèn chùm pha lê
+                  td.desc Đa Ca
+                  td 1/10/2019 23:06
+                  td
+                    span.status--denied Hết
+                  td 10,000
+                  td
+                    .table-data-feature
+                      button.item(data-toggle='tooltip' data-placement='top' title='Chỉnh sửa')
+                        i.zmdi.zmdi-edit
+                      button.item(data-toggle='tooltip' data-placement='top' title='Xóa')
+                        i.zmdi.zmdi-delete
+                      button.item(data-toggle='tooltip' data-placement='top' title='Khác')
+                        i.zmdi.zmdi-more
+                tr.spacer
+                tr.tr-shadow
+                  td
+                    label.au-checkbox
+                      input(type='checkbox')
+                      span.au-checkmark
+                  td 100393
+                  td Tủ quần áo CQ
+                  td.desc CQ
+                  td 3/11/2018 19:03
+                  td
+                    span.status--process Hết
+                  td 1,000
+                  td
+                    .table-data-feature
+                      button.item(data-toggle='tooltip' data-placement='top' title='Chỉnh sửa')
+                        i.zmdi.zmdi-edit
+                      button.item(data-toggle='tooltip' data-placement='top' title='Xóa')
+                        i.zmdi.zmdi-delete
+                      button.item(data-toggle='tooltip' data-placement='top' title='Khác')
+                        i.zmdi.zmdi-more
+          // END DATA TABLE
+      .row.m-t-30
+        .col-md-12
+          // DATA TABLE
+          h3.title-5.m-b-35 Danh sách đơn hàng
+          .table-responsive.m-b-40
+            table.table.table-borderless.table-data3
+              thead
+                tr
+                  th Ngày
+                  th Mã đơn hàng
+                  th Khách hành
+                  th Trạng thái
+                  th Giá (Nghìn đồng)
+              tbody
+                tr
+                  td 28/10/2019 05:57
+                  td 111111
+                  td Nguyễn Văn A
+                  td.process Hoàn thành
+                  td 9,000
+                tr
+                  td 28/10/2019 07:57
+                  td 111112
+                  td Nguyễn Văn An
+                  td.process Hoàn thành
+                  td 2,100
+                tr
+                  td 28/10/2019 07:59
+                  td 111113
+                  td Trần Thanh T
+                  td.denied Hủy
+                  td 94,150
+                tr
+                  td 28/10/2019 08:27
+                  td 111114
+                  td Lê Thị Ca
+                  td.denied Hủy
+                  td 300
+                tr
+                  td 29/10/2019 05:57
+                  td 111115
+                  td Nguyễn Anh Hùng
+                  td.process Hoàn thành
+                  td 21,000
+                tr
+                  td 29/10/2019 09:57
+                  td 111116
+                  td Trương Văn Sang
+                  td.process Hoàn thành
+                  td 91,000
+                tr
+                  td 30/10/2019 11:52
+                  td 111117
+                  td Nguyễn Lê Công Đại
+                  td.process Hoàn thành
+                  td 11,100
+          // END DATA TABLE
+      .row
+        .col-md-12
+          .copyright
+            p
+              | Copyright &copy; 2018 Colorlib. All rights reserved. Template by 
+              a(href='https://colorlib.com') Colorlib
+              | .
