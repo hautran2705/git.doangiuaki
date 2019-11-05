@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var adminRouter = require('./routes/admin');
 
 var app = express();
 const port = 3000;
